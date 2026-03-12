@@ -1,0 +1,6 @@
+{
+  "name": "claude-code-container",
+  "build": {
+    "dockerfile": "Containerfile"
+  }
+}
