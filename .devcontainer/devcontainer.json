@@ -8,7 +8,7 @@
   "mounts": [
     // Persist Claude Code session data, project history, and memory across devcontainer rebuilds
     {
-      "source": "claude-code-container-dotclaude-${devcontainerId}",
+      "source": "dotclaude-${localWorkspaceFolderBasename}-${devcontainerId}",
       "target": "/home/devuser/.claude",
       "type": "volume"
     }
