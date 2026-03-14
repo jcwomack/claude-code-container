@@ -5,6 +5,14 @@
   "build": {
     "dockerfile": "Containerfile"
   },
+  "mounts": [
+    // Persist Claude Code session data, project history, and memory across devcontainer rebuilds
+    {
+      "source": "claude-code-container-dotclaude-${devcontainerId}",
+      "target": "/home/devuser/.claude",
+      "type": "volume"
+    }
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
